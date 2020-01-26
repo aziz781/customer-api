@@ -1,0 +1,11 @@
+version: '3'
+services:
+  customer-api-container:
+    image: aziz781/customer-api:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/customer-api
+    ports:
+      - "8080:8080"

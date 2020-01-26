@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "User",
+  "required": [
+    "userFirstName",
+    "userLastName",
+    "contact"
+  ],
+  "properties": {
+    "userFirstName": {
+      "$ref": "#/definitions/nonEmptyString",
+      "type": "string"
+    },
+    "userLastName": {
+      "$ref": "#/definitions/nonEmptyString",
+      "type": "string"
+    },
+    "contact": {
+      "type": "object",
+      "title": "Contact",
+      "required": [
+        "phone",
+        "email"
+      ],
+      "properties": {
+        "phone": {
+          "$ref": "#/definitions/nonEmptyString",
+          "type": "string"
+        },
+        "email": {
+          "$ref": "#/definitions/nonEmptyString",
+          "type": "string"
+        }
+      },
+      "definitions": {
+        "nonEmptyString": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    }
+  },
+  "definitions": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 3
+    }
+  }
+}

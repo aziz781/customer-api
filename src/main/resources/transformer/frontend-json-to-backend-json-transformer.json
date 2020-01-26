@@ -1,0 +1,12 @@
+/*Jolt Transforms  (camel-jolt) for frondend  request JSON to backend request JSON*/
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "firstName": "userFirstName",
+      "lastName": "userLastName",
+      "phone": "contact.&",
+      "email": "contact.&"
+    }
+  }
+]

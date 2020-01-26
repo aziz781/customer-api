@@ -1,0 +1,8 @@
+{
+  "userFirstName": "Abdul",
+  "userLastName": "Aziz",
+  "contact":{
+    "phoneNumber": "0123456789",
+    "emailAddress": "example@gmail.com"
+  }
+}
